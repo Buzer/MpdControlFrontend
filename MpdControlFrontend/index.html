@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MpdControl</title>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/socket.io-client.js"></script>
+    <script src="lib/dragdealer.js"></script>
+    <script src="lib/LiteEvent.js"></script>
+    <script src="lib/MpdControl.js"></script>
+    <script src="lib/index.js"></script>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="serverselectdiv">
+        <select id="serverselect">
+            <option value="">-</option>
+        </select>
+    </div>
+    <div id="timer" class="dragdealer">
+        <div class="handle red-bar">00:00</div>
+    </div>
+    <div id="player">
+        <ul class="centerlist" id="controls">
+            <li id="stop"><a>Stop</a></li>
+            <li id="play"><a>Play/Pause</a></li>
+            <li id="prev"><a>Prev</a></li>
+            <li id="next"><a>Next</a></li>
+        </ul>
+        <div id="currentsong">
+            <div>
+                <div class="title">
+                    Title
+                </div>
+            </div>
+            <div>
+                <div class="artist">
+                    Artist
+                </div>
+            </div>
+            <div>
+                <div class="album">
+                    Album
+                </div>
+            </div>
+            <div>
+                <img class="coverimg" src="#" />
+            </div>
+
+        </div>
+        <div id="playlist">
+
+        </div>
+    </div>
+</body>
+</html>
